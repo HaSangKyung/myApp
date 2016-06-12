@@ -1,0 +1,122 @@
+<!--
+- author : 주용준
+- date   : 2015. 06. 19.
+- @(#)
+- 설명: node.js 5일차 과제
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title><%= title %></title>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<style type="text/css">
+table#carForm { border-collapse: collapse; width: 400px; margin-top: 10px; }
+table#carForm th { border: 1px solid #c3c3c3; height: 25px; font-weight: normal; text-align: center; color:#0a599f; background-color: #e5e5e5; }
+table#carForm td { border: 1px solid #c3c3c3; height: 25px; font-weight: normal; text-align: center; background-color:  }
+</style>
+<script type="text/javascript">
+jQuery(document).ready(function ($) {
+	
+});
+
+function addCar() {
+	var CAR_NAME = $.trim( $("#CAR_NAME").val() );
+	var CAR_PRICE = $.trim( $("#CAR_PRICE").val() );
+	var CAR_COMPANY = $.trim( $("#CAR_COMPANY").val() );
+	var CAR_YEAR = $("#CAR_YEAR").val();
+	
+	if( CAR_NAME == "" ) {
+		alert("자동차 이름을 입력해주세요.");
+		$("#CAR_NAME").focus();
+		return;
+	}
+	
+	
+	var params = {
+		CAR_NAME : CAR_NAME,
+		CAR_PRICE : CAR_PRICE,
+		CAR_COMPANY : CAR_COMPANY,
+		CAR_YEAR : CAR_YEAR
+	};
+	
+	$.ajax({ 
+		type	: "POST",
+		url		: "./addCarInfo",
+		data	: params,
+		dataType: 'text',
+		async   : true,
+		cache	: false,
+		error 	: function(obj){ 
+			alert("데이터 추가 실패");
+		},
+		success	: function(obj) {
+			if(obj=="false") {
+				alert("등록에 실패하였습니다.");
+			} else {
+				location.href = "./carList";
+			}
+		}
+	});
+}
+</script>
+</head>
+<body>
+	<h1><%= title %></h1>
+	<table id="carForm">
+	<tr>
+		<th>자동차 이름</th>
+		<td><input type='text' id="CAR_NAME"></td>
+	<tr>
+	<tr>
+		<th>자동차 가격</th>
+		<td><input type='number' id="CAR_PRICE"></td>
+	<tr>
+	<tr>
+		<th>자동차 제조회사</th>
+		<td><input type='text' id="CAR_COMPANY"></td>
+	<tr>
+	<tr>
+		<th>자동차 연식</th>
+		<td>
+			<select id="CAR_YEAR">
+			<option value="1990">1990</option>
+			<option value="1991">1991</option>
+			<option value="1992">1992</option>
+			<option value="1993">1993</option>
+			<option value="1994">1994</option>
+			<option value="1995">1995</option>
+			<option value="1996">1996</option>
+			<option value="1997">1997</option>
+			<option value="1998">1998</option>
+			<option value="1999">1999</option>
+			<option value="2000">2000</option>
+			<option value="2001">2001</option>
+			<option value="2002">2002</option>
+			<option value="2003">2003</option>
+			<option value="2004">2004</option>
+			<option value="2005">2005</option>
+			<option value="2006">2006</option>
+			<option value="2007">2007</option>
+			<option value="2008">2008</option>
+			<option value="2009">2009</option>
+			<option value="2010">2010</option>
+			<option value="2011">2011</option>
+			<option value="2012">2012</option>
+			<option value="2013">2013</option>
+			<option value="2014">2014</option>
+			<option value="2015" selected="selected">2015</option>
+			<option value="2016">2016</option>
+			<option value="2017">2017</option>
+			</select>년
+		</td>
+	<tr>
+	<tr>
+		<td colspan='2' style="text-align: right; padding-top: 5px; border: 0px;">
+			<input type="button" value="등록" onclick="addCar()">
+		</td>
+	<tr>
+	</table>
+</body>
+</html>

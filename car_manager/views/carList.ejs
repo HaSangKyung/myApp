@@ -1,0 +1,75 @@
+<!--
+- author : 주용준
+- date   : 2015. 06. 19.
+- @(#)
+- 설명: node.js 5일차 과제
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title><%= title %></title>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<style type="text/css">
+table#carList { border-collapse: collapse; width: 550px; margin-top: 10px; }
+table#carList th { border: 1px solid #c3c3c3; height: 25px; font-weight: normal; text-align: center; color:#0a599f; background-color: #e5e5e5; }
+table#carList td { border: 1px solid #c3c3c3; height: 25px; font-weight: normal; text-align: left; background-color: padding: 5px; }
+</style>
+<script type="text/javascript">
+jQuery(document).ready(function ($) {
+	
+});
+
+/* 자동자 정보 삭제 처리 */
+function delCarInfo( CAR_ID ) {
+	$.ajax({ 
+		type	: "POST",
+		url		: "./delCarInfo",
+		data	:  { CAR_ID : CAR_ID },
+		dataType: 'text',
+		async   : true,
+		cache	: false,
+		error 	: function(obj){ 
+			alert("데이터 삭제 실패");
+		},
+		success	: function(obj) {
+			if(obj=="false") {
+				alert("삭제 실패하였습니다.");
+			} else {
+				location.reload(true);
+			}
+		}
+	});
+}
+
+
+/* 자동자 정보 수정 폼 이동 */
+function updateCarInfo( CAR_ID ) {
+	location.href = "./updateCar?carid=" + CAR_ID;
+}
+</script>
+</head>
+<body>
+	<h1><%= title %></h1>
+	<table id='carList'>
+	<tr>
+		<th>자동차 이름</th>
+		<th>자동차 가격</th>
+		<th>제조회사</th>
+		<th>연식</th>
+		<th colspan='2'><a href='./addCar'>상품등록</a></th>
+	<tr>
+	<%	for( var i in carList ){ %>
+	<tr>
+		<td><%=carList[i].CAR_NAME %> </td>
+		<td style="text-align: right;"><%=carList[i].CAR_PRICE %> </td>
+		<td><%=carList[i].CAR_COMPANY %> </td>
+		<td style="text-align: center;"><%=carList[i].CAR_YEAR %> </td>
+		<td style="text-align: center;"><a href='javascript:delCarInfo("<%=carList[i].CAR_ID%>");'>삭제</a></td>
+		<td style="text-align: center;"><a href='javascript:updateCarInfo("<%=carList[i].CAR_ID%>");'>수정</a></td>
+	</tr>
+	<%	} %>
+	</table>
+</body>
+</html>
