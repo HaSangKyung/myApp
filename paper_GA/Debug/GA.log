@@ -1,0 +1,55 @@
+﻿빌드 시작: 2013-09-08 오후 3:56:43
+     1>2 노드의 "C:\Users\Administrator\Desktop\GA\GA.vcxproj" 프로젝트(build 대상)입니다.
+     1>InitializeBuildStatus:
+         "AlwaysCreate"이(가) 지정되었기 때문에 ".\Debug\GA.unsuccessfulbuild"을(를) 만들고 있습니다.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ga.cpp
+         ga.cpp
+     1>c:\users\administrator\desktop\ga\ga.cpp(128): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 'fopen' 선언을 참조하십시오.
+     1>c:\users\administrator\desktop\ga\ga.cpp(129): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 'fopen' 선언을 참조하십시오.
+     1>c:\users\administrator\desktop\ga\ga.cpp(137): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(253) : 'fscanf' 선언을 참조하십시오.
+     1>c:\users\administrator\desktop\ga\ga.cpp(138): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(253) : 'fscanf' 선언을 참조하십시오.
+     1>c:\users\administrator\desktop\ga\ga.cpp(139): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(253) : 'fscanf' 선언을 참조하십시오.
+     1>c:\users\administrator\desktop\ga\ga.cpp(140): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(253) : 'fscanf' 선언을 참조하십시오.
+     1>c:\users\administrator\desktop\ga\ga.cpp(141): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(253) : 'fscanf' 선언을 참조하십시오.
+     1>c:\users\administrator\desktop\ga\ga.cpp(142): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(253) : 'fscanf' 선언을 참조하십시오.
+     1>c:\users\administrator\desktop\ga\ga.cpp(147): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(253) : 'fscanf' 선언을 참조하십시오.
+     1>c:\users\administrator\desktop\ga\ga.cpp(148): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(253) : 'fscanf' 선언을 참조하십시오.
+     1>c:\users\administrator\desktop\ga\ga.cpp(149): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(253) : 'fscanf' 선언을 참조하십시오.
+     1>c:\users\administrator\desktop\ga\ga.cpp(150): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(253) : 'fscanf' 선언을 참조하십시오.
+     1>c:\users\administrator\desktop\ga\ga.cpp(153): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(253) : 'fscanf' 선언을 참조하십시오.
+     1>c:\users\administrator\desktop\ga\ga.cpp(154): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(253) : 'fscanf' 선언을 참조하십시오.
+     1>c:\users\administrator\desktop\ga\ga.cpp(209): warning C4244: '인수' : 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\administrator\desktop\ga\ga.cpp(215): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 'strcpy' 선언을 참조하십시오.
+     1>c:\users\administrator\desktop\ga\ga.cpp(216): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 'strcpy' 선언을 참조하십시오.
+     1>c:\users\administrator\desktop\ga\ga.cpp(217): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 'strcpy' 선언을 참조하십시오.
+     1>c:\users\administrator\desktop\ga\ga.cpp(246): error C2668: 'fabs' : 오버로드된 함수에 대한 호출이 모호합니다.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\math.h(565): 'long double fabs(long double)'일 수 있습니다.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\math.h(517): 또는       'float fabs(float)'
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\math.h(118): 또는       'double fabs(double)'
+                 인수 목록 '(int)'을(를) 일치시키는 동안
+     1>c:\users\administrator\desktop\ga\ga.cpp(270): warning C4244: '인수' : 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\administrator\desktop\ga\ga.cpp(325): warning C4244: '인수' : 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\administrator\desktop\ga\ga.cpp(393): warning C4244: '인수' : 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>"C:\Users\Administrator\Desktop\GA\GA.vcxproj" 프로젝트를 빌드했습니다(build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:00.89
